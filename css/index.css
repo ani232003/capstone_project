@@ -1,0 +1,547 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    background-color: grey;
+}
+
+nav.main_nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_nav a img {
+    height: 6rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+ul.navlist {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    padding: 0;
+}
+
+li.nav-item {
+    padding: 1rem;
+    margin: 0.5rem;
+    margin-right: 1rem;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+.main_nav li:hover a {
+    color: orangered;
+}
+
+.main_nav li a.active {
+    color: orangered;
+}
+.hamburger {
+    display: none; 
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+  }
+
+
+
+.hero {
+    background-image: url('../assets/images/hero-bg.jpg');
+    background-size: 100% 100%;
+}
+
+.hero_text h1 {
+    font-size: 3rem;
+    width: 40%;
+    padding: 1rem;
+}
+
+.hero_text h1 em {
+    color: orangered;
+}
+
+.hero_text p {
+    width: 40%;
+    color: white;
+    padding: 1rem;
+}
+
+.divider {
+    width: 6rem;
+    padding: 0.3rem;
+    margin: 0.7rem 0;
+}
+
+/*
+@media (max-width:835px){
+
+    .hero{
+        padding: 4rem;
+    }
+    .hero_text{
+        width: 90%;
+        text-align: center;
+    }
+    .hero_text h1{
+        font-size: 2.5rem;
+        line-height: 1rem;
+        margin-bottom:1rem;
+    }
+    .divider{
+        margin:1rem auto;
+    }
+    .hero_text p{
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+}*/
+
+.service_heading {
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.service_heading h4 {
+    color: orangered;
+}
+
+.row.learn_skill {
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.service_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.do {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.service_text p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+}
+
+.doubt p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orangered;
+}
+
+.service_item i,
+.do i {
+    font-size: 4rem;
+    padding: 10px;
+    color: orangered;
+}
+
+.banner {
+    background-image: url('../assets/images/banner-bg.jpg');
+    background-size: cover;
+}
+
+.banner_head h2 {
+    text-align: center;
+    color: wheat;
+    padding: 5rem 3rem;
+}
+
+.banner_nav .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 2rem;
+    color: orangered;
+}
+
+.banner_nav {
+    text-align: center;
+    margin: 5rem;
+}
+
+.banner_nav .btn:hover {
+
+    background-color: white;
+    color: orangered;
+}
+
+.text {
+    text-align: center;
+}
+
+.tab {
+    padding: 2rem 1rem;
+    font-family: auto;
+}
+
+thead {
+    background-color: #cbcbcb;
+}
+
+th {
+    padding: 1rem 8rem;
+}
+
+tbody {
+    text-align: center;
+}
+
+td {
+    padding: 1rem;
+}
+
+.learning {
+    background-image: url('../assets/images/plan-bg.png');
+    background-size: 100% 100%;
+}
+
+.women_img img {
+    height: 100%;
+    width: 50%;
+}
+
+.form_heading {
+    text-align: center;
+    padding: 2rem;
+}
+
+.form_sec {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.form_sec div,
+form>div {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: orangered;
+    outline: none;
+}
+
+button[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: darkorange;
+}
+
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.testimonial-content {
+    max-width: 65%;
+}
+
+.testimonial-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    color: orangered;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.role {
+    color: orangered;
+}
+
+.location-section {
+    padding: 2rem;
+}
+
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 280px;
+    flex: 1;
+}
+
+.contact-card .icon {
+    font-size: 2.5rem;
+    color: mediumseagreen;
+    margin-bottom: 0.5rem;
+}
+
+.contact-card h4 {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contact-text {
+    color: #28a745;
+    font-weight: 600;
+}
+
+.enquiry-section {
+    padding: 2rem;
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.enquiry-section h2 {
+    margin-bottom: 2rem;
+    color: #1f2b3e;
+}
+
+.enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.form-row input,
+textarea {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    background-color: #ddd;
+    font-size: 1rem;
+    width: 100%;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    align-self: center;
+    padding: 0.6rem 1.2rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: darkorange;
+}
+footer {
+    text-align: center !important;
+    background-color: #10102d;
+    color: white;
+}
+/*
+@media (max-width : px){
+
+    .main_nav a img{
+        height: 5rem;
+    }
+    .navlist li a{
+        font-size: 0.8rem;
+
+    }
+
+}
+@media (min-width : 734px){
+
+    .main_nav a img{
+        height: 4rem;
+    }
+    .navlist li a{
+        font-size: 0.8rem;
+
+    }
+}
+
+@media (max-width: 990px) {
+    .hero {
+      padding: 3rem;
+    }
+    .hero_text {
+      text-align: center;
+      width: 85%;
+    }
+    .hero-text h2 {
+      line-height: 2rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+ 
+    .hero_text p {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+  
+  @media (max-width: 770px) {
+    /* Header 
+    .logo {
+      height: auto;
+    }
+  
+    /* Navlists links 
+    .navlist li a {
+      font-size: 0.8rem;
+      white-space: nowrap;
+    }
+  
+  
+    /* Services 
+    .service_item {
+      height: auto;
+      padding: 0.5rem;
+      width: 100%;
+    }
+  
+
+    /* Learning Plan Form 
+  
+    .image-container {
+      display: none; 
+    }
+    .col-md-7 {
+      display: flex;
+      justify-content: center;
+    }
+    .main-container {
+      margin: 2rem;
+    }
+    .btn-submit {
+      white-space: nowrap;
+    }
+    .map-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+  
+    .contact-info {
+      position: relative;
+      top: auto;
+      margin: 1rem auto;
+    }
+  
+    .cards {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      top: auto;
+      left: auto;
+      right: auto;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 645px) {
+    
+    .navlist {
+      display: none;
+    }
+    .hamburger-manu {
+      display: block;
+      margin-left: auto;
+      margin-right: 1rem;
+      margin-top: 1rem;
+    }
+    
+    
+    .course-list li {
+      flex-direction: column;
+    }
+  
+    .image6 {
+      display: none;
+    }
+  }
+
+*/
+
+  
+
+
+  
